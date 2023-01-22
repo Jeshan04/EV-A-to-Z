@@ -1,0 +1,545 @@
+//This is a C++ file which is supposed to be run seperately
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
+#include <conio.h>
+#include <stdlib.h>
+using namespace std;
+
+typedef struct{
+string name;
+string city;
+int vehicleType;
+int tier;
+}user;
+
+class twoWheel
+{
+    public:
+        void AvonEPlus()
+        {
+            cout << "Name: Avon E Plus" << endl;
+            cout << "Price: Rs.25000" << endl;
+            cout << "Top Speed: 24km/hr " << endl;
+            cout << "Range: 50km/charge" << endl;
+            cout << "Charging Time: 6 hours" << endl;
+        }
+        void BounceInfinityE1()
+        {
+            cout << "Name: Bounce Infinity E1" << endl;
+            cout << "Price: Rs.47000" << endl;
+            cout << "Top Speed: 65km/hr " << endl;
+            cout << "Range: 85km/charge" << endl;
+            cout << "Charging Time: 3.5 hours" << endl;
+        }
+        void UjaaseZy()
+        {
+            cout << "Name: Ujaas eZy" << endl;
+            cout << "Price: Rs.31000" << endl;
+            cout << "Top Speed: 38km/hr " << endl;
+            cout << "Range: 60km/charge" << endl;
+            cout << "Charging Time: 6 hours" << endl;
+        }
+        void KabiraMobilityKollegioNeo()
+        {
+            cout << "Name: Kabira Mobility Kollegio Neo" << endl;
+            cout << "Price: Rs.47000" << endl;
+            cout << "Top Speed: 24km/hr " << endl;
+            cout << "Range: 100km/charge" << endl;
+            cout << "Charging Time: 4 hours" << endl;
+        }
+        void EvoletDerby()
+        {
+            cout << "Name: Kabira Mobility Kollegio Neo" << endl;
+            cout << "Price: Rs.49000" << endl;
+            cout << "Top Speed: 25km/hr " << endl;
+            cout << "Range: 120km/charge" << endl;
+            cout << "Charging Time: 7 hours" << endl;
+        }
+        void AvonELite()
+        {
+            cout << "Name: Avon E Lite" << endl;
+            cout << "Price: Rs.28000" << endl;
+            cout << "Top Speed: 24km/hr " << endl;
+            cout << "Range: 50km/charge" << endl;
+            cout << "Charging Time: 4 hours" << endl;
+        }
+        void GretaHarperZXSeriesI()
+        {
+            cout << "Name: Greta Harper ZX Series-I" << endl;
+            cout << "Price: Rs.42000" << endl;
+            cout << "Top Speed: 32km/hr " << endl;
+            cout << "Range: 80km/charge" << endl;
+            cout << "Charging Time: 4 hours" << endl;
+        }
+        void RaftaarElectrica()
+        {
+            cout << "Name: Raftaar Electrica" << endl;
+            cout << "Price: Rs.48500" << endl;
+            cout << "Top Speed: 38km/hr " << endl;
+            cout << "Range: 100km/charge" << endl;
+            cout << "Charging Time: 4 hours" << endl;
+        }
+        void iVOOMiJeetX()
+        {
+            cout << "Name: iVOOMiJeetX" << endl;
+            cout << "Price: Rs.99000" << endl;
+            cout << "Top Speed: 70km/hr " << endl;
+            cout << "Range: 200km/charge" << endl;
+            cout << "Charging Time: 5 hours" << endl;
+            cout << "It has a detachable battery which you can carry to home." << endl;
+        }
+        void HeroElectricOptima()
+        {
+            cout << "Name: Hero Electric Optima" << endl;
+            cout << "Price: Rs.70000" << endl;
+            cout << "Top Speed: 45km/hr " << endl;
+            cout << "Range: 140km/charge" << endl;
+            cout << "Charging Time: 4 hours" << endl;
+            cout << "It has a detachable battery which you can carry to home." << endl;
+        }
+        void OkinawaPraisePro()
+        {
+            cout << "Name: Okinawa PraisePro" << endl;
+            cout << "Price: Rs.97000" << endl;
+            cout << "Top Speed: 60km/hr " << endl;
+            cout << "Range: 88km/charge" << endl;
+            cout << "Charging Time: 3 hours" << endl;
+            cout << "It has a detachable battery which you can carry to home." << endl;
+        }
+        void OlaS1()
+        {
+            cout << "Name: Ola S1" << endl;
+            cout << "Price: Rs.85000" << endl;
+            cout << "Top Speed: 116km/hr " << endl;
+            cout << "Range: 181km/charge" << endl;
+            cout << "Charging Time: 6-7 hours" << endl;
+        }
+        void HeroElectricNYX()
+        {
+            cout << "Name: Hero Electric NYX" << endl;
+            cout << "Price: Rs.75000" << endl;
+            cout << "Top Speed: 42km/hr " << endl;
+            cout << "Range: 100km/charge" << endl;
+            cout << "Charging Time: 4 hours" << endl;
+        }
+        void KineticGreenZoom()
+        {
+            cout << "Name: Kinetic Green Zoom" << endl;
+            cout << "Price: Rs.75000" << endl;
+            cout << "Top Speed: 40km/hr " << endl;
+            cout << "Range: 100km/charge" << endl;
+            cout << "Charging Time: 3.5 hours" << endl;
+        }
+        void KomakiFlora()
+        {
+            cout << "Name: Komaki Flora" << endl;
+            cout << "Price: Rs.79000" << endl;
+            cout << "Top Speed: 65km/hr " << endl;
+            cout << "Range: 75km/charge" << endl;
+            cout << "Charging Time: 4 hours" << endl;
+        }
+        void GemopaiAstridLite()
+        {
+            cout << "Name: Gemopai Astrid Lite" << endl;
+            cout << "Price: Rs.80000" << endl;
+            cout << "Top Speed: 65km/hr " << endl;
+            cout << "Range: 175km/charge" << endl;
+            cout << "Charging Time: 6 hours" << endl;
+        }
+        void OkinawaiPraisePlus()
+        {
+            cout << "Name: Okinawa iPraise Plus" << endl;
+            cout << "Price: Rs.1.46 lakhs" << endl;
+            cout << "Top Speed: 80km/hr " << endl;
+            cout << "Range: 150km/charge" << endl;
+            cout << "Charging Time: 3 hours" << endl;
+            cout << "It has a detachable battery which you can carry to home." << endl;
+        }
+        void BajajChetak()
+        {
+            cout << "Name: Bajaj Chetak" << endl;
+            cout << "Price: Rs.1.51 lakhs" << endl;
+            cout << "Top Speed: 63km/hr " << endl;
+            cout << "Range: 95km/charge" << endl;
+            cout << "Charging Time: 4 hours" << endl;
+        }
+        void EeVeSoul()
+        {
+            cout << "Name: EeVe Soul" << endl;
+            cout << "Price: Rs.1.20 lakhs" << endl;
+            cout << "Top Speed: 55km/hr " << endl;
+            cout << "Range: 120km/charge" << endl;
+            cout << "Charging Time: 4 hours" << endl;
+        }
+        void OneMotoElecta()
+        {
+            cout << "Name: One Moto Electa" << endl;
+            cout << "Price: Rs.2.00 lakhs" << endl;
+            cout << "Top Speed: 85km/hr " << endl;
+            cout << "Range: 250km/charge" << endl;
+            cout << "Charging Time: 6 hours" << endl;
+        }
+        void WhiteCarbonMotorsGT5()
+        {
+            cout << "Name: One Moto Electa" << endl;
+            cout << "Price: Rs.1.25 lakhs" << endl;
+            cout << "Top Speed: 50km/hr " << endl;
+            cout << "Range: 150km/charge" << endl;
+            cout << "Charging Time: 4 hours" << endl;
+        }
+        
+};
+
+class fourWheel
+{
+    public:
+        void TataNexonEVPrime()
+        {
+            cout << "Name: Tata Nexon EV Prime" << endl;
+            cout << "Price: Rs.15 lakhs" << endl;
+            cout << "Range: 312km/charge" << endl;
+            cout << "Number of seats: 5" << endl;
+            cout << "Charging Time: 9 hours" << endl;
+        }
+        void TataTigorEV()
+        {
+            cout << "Name: Tata Tigor EV" << endl;
+            cout << "Price: Rs.12.5 lakhs" << endl;
+            cout << "Range: 306km/charge" << endl;
+            cout << "Number of seats: 5" << endl;
+            cout << "Charging Time: 9.4 hours" << endl;
+        }
+        void TataTigoEV()
+        {
+            cout << "Name: Tata Tigo EV" << endl;
+            cout << "Price: Rs.11 lakhs" << endl;
+            cout << "Range: 250km/charge" << endl;
+            cout << "Number of seats: 5" << endl;
+            cout << "Charging Time: 9.4 hours" << endl;
+        }
+        void MahindraeVerito()
+        {
+            cout << "Name: Mahindra e-Verito" << endl;
+            cout << "Price: Rs.9.13 lakhs" << endl;
+            cout << "Range: 120km/charge" << endl;
+            cout << "Number of seats: 5" << endl;
+            cout << "Charging Time: 3 hours" << endl;
+        }
+        void TataNexonEV()
+        {
+            cout << "Name: Tata Nexon EV" << endl;
+            cout << "Price: Rs.14.5 lakhs" << endl;
+            cout << "Range: 200km/charge" << endl;
+            cout << "Number of seats: 5" << endl;
+            cout << "Charging Time: 3 hours" << endl;
+        }
+         void MGZSEV()
+        {
+            cout << "Name: MG ZS EV" << endl;
+            cout << "Price: Rs.23 lakhs" << endl;
+            cout << "Range: 500km/charge" << endl;
+            cout << "Number of seats: 5" << endl;
+            cout << "Charging Time: 14 hours" << endl;
+        }
+        void HyundaiKonaElectric()
+        {
+            cout << "Name: Hyundai Kona Electric" << endl;
+            cout << "Price: Rs.24 lakhs" << endl;
+            cout << "Range: 300km/charge" << endl;
+            cout << "Number of seats: 5" << endl;
+            cout << "Charging Time: 6.1 hours" << endl;
+        }
+        void MahindraXUV400()
+        {
+            cout << "Name: Mahindra XUV400" << endl;
+            cout << "Price: Rs.16 lakhs" << endl;
+            cout << "Range: 375km/charge" << endl;
+            cout << "Number of seats: 5" << endl;
+            cout << "Charging Time: 6 hours" << endl;
+        }
+};
+
+void vehicle(user p);
+void tier1(user p, int budget);
+void tier2(user p, int budget);
+void tier3(user p);
+
+int main()
+{
+    user p;
+    system("cls");
+    cout << "\t\t\t     Welcome to Budget Electric Vehicles" << endl;
+    cout << "Enter your name: ";
+    cin >> p.name;
+    cout << p.name << ", in which city are you planning to purchase an Electrical Vehicle?" << endl;
+    cin >> p.city;
+    cout << "what type of vehicle are you looking for?\nEnter 1 for a Two Wheeler\nEnter 2 for a Four Wheeler" << endl;
+    cin >> p.vehicleType;
+
+    string t1[]={"mumbai", "pune"};
+    string t2[]={"nashik", "aurangabad", "nagpur", "amravati", "kolhapur"};
+    int len;
+
+    for(int i=0; i<2; i++)
+    {
+        len=t1[i].length();
+        for(int j=0; j<p.city.length(); j++)
+        {
+            if(t1[i][j]==p.city[j])
+            {
+                len--;
+            }
+        }
+        if(len==0)
+        {
+            p.tier=1;
+            break;
+        }
+    }
+
+    if(p.tier!=1)
+    {
+        for(int i=0; i<5; i++)
+        {
+            len=t2[i].length();
+            for(int j=0; j<p.city.length(); j++)
+            {
+                if(t2[i][j]==p.city[j])
+                {
+                    len--;
+                }
+            }
+            if(len==0)
+            {
+                p.tier=2;
+                break;
+            }
+        }
+    }
+    if(p.tier!=1 && p.tier!=2)
+        p.tier=3;
+
+    vehicle(p);
+    cout << "Thank you for visiting us!!" << endl;
+    return 0;
+}
+
+void vehicle(user p)
+{
+    int budget;
+    switch(p.tier)
+    {
+        case 1:  
+            if(p.vehicleType==1)
+            {
+                cout << "Enter 1 if your budget is between 25000-50000" << endl;
+                cout << "Enter 2 if your budget is between 50000-100000" << endl;
+                cout << "Enter 3 if your budget is greater than 100000" << endl;
+                cin >> budget;
+            }
+            else
+            {
+                cout << "Enter 1 if your budget is between 700000-1500000" << endl;
+                cout << "Enter 2 if your budget is between 1500000-3000000" << endl;
+                cout << "Enter 3 if your budget is greater than 3000000" << endl;
+                cin >> budget;
+            }
+            tier1(p,budget);
+            break;
+        case 2:
+            if(p.vehicleType==1)
+            {
+                cout << "Enter 1 if your budget is between 25000-50000" << endl;
+                cout << "Enter 2 if your budget is between 50000-100000" << endl;
+                cout << "Enter 3 if your budget is greater than 100000" << endl;
+                cin >> budget;
+            }
+            else
+            {
+                cout << "Enter 1 if your budget is between 700000-1500000" << endl;
+                cout << "Enter 2 if your budget is between 1500000-3000000" << endl;
+                cout << "Enter 3 if your budget is greater than 3000000" << endl;
+                cin >> budget;
+            }
+            tier2(p,budget);
+            break;
+        case 3:
+            tier3(p);
+            break;
+    }
+}
+void tier1(user p, int budget)
+{
+    switch(p.vehicleType)
+    {
+        case 1:
+            twoWheel tw;
+            if(budget==1)
+            {
+                cout << endl;
+                tw.AvonEPlus();
+                cout << endl;
+                tw.BounceInfinityE1();
+                cout << endl;
+                tw.UjaaseZy();
+                cout << endl;
+                tw.KabiraMobilityKollegioNeo();
+                cout << endl;
+                tw.EvoletDerby();
+                cout << endl;
+                tw.AvonELite();
+                cout << endl;
+                tw.GretaHarperZXSeriesI();
+                cout << endl;
+                tw.RaftaarElectrica();
+                cout << endl;
+            }
+            else if(budget==2)
+            {
+                tw.iVOOMiJeetX();
+                cout << endl;
+                tw.HeroElectricOptima();
+                cout << endl;
+                tw.OkinawaPraisePro();
+                cout << endl;
+                tw.OlaS1();
+                cout << endl;
+                tw.HeroElectricNYX();
+                cout << endl;
+                tw.KineticGreenZoom();
+                cout << endl;
+                tw.KomakiFlora();
+                cout << endl;
+                tw.GemopaiAstridLite();
+                cout << endl;
+            }
+            else
+            {
+                tw.OneMotoElecta();
+                cout << endl;
+                tw.BajajChetak();
+                cout << endl;
+                tw.OkinawaiPraisePlus();
+                cout << endl;
+                tw.WhiteCarbonMotorsGT5();
+                cout << endl;
+                tw.EeVeSoul();
+                cout << endl;
+            }
+            break;
+        case 2:
+        fourWheel fw;
+         if(budget==1)
+            {
+                fw.TataNexonEVPrime();
+                cout << endl;
+                fw.TataTigorEV();
+                cout << endl;
+                fw.TataTigoEV();
+                cout << endl;
+                fw.MahindraeVerito();
+                cout << endl;
+                fw.TataNexonEV();
+                cout << endl;
+            }
+            else if(budget==2)
+            {
+                fw.MGZSEV();
+                cout << endl;
+                fw.HyundaiKonaElectric();
+                cout << endl;
+                fw.MahindraXUV400();
+                cout << endl;
+            }
+            break;
+    }
+}
+void tier2(user p, int budget)
+{
+    switch(p.vehicleType)
+    {
+        case 1:
+            twoWheel tw;
+            if(budget==1)
+            {
+                tw.BounceInfinityE1();
+                cout << endl;
+                tw.UjaaseZy();
+                cout << endl;
+                tw.KabiraMobilityKollegioNeo();
+                cout << endl;
+                tw.AvonELite();
+                cout << endl;
+                tw.GretaHarperZXSeriesI();
+                cout << endl;
+                tw.RaftaarElectrica();
+                cout << endl;
+            }
+            else if(budget==2)
+            {
+                tw.iVOOMiJeetX();
+                cout << endl;
+                tw.HeroElectricOptima();
+                cout << endl;
+                tw.OkinawaPraisePro();
+                cout << endl;
+                tw.HeroElectricNYX();
+                cout << endl;
+                tw.KineticGreenZoom();
+                cout << endl;
+                tw.KomakiFlora();
+                cout << endl;
+            }
+            else
+            {
+                tw.OkinawaiPraisePlus();
+                cout << endl;
+                tw.BajajChetak();
+                cout << endl;
+                tw.WhiteCarbonMotorsGT5();
+                cout << endl;
+                tw.EeVeSoul();
+                cout << endl;
+            }
+            break;
+        case 2:
+            fourWheel fw;
+            if(budget==1)
+            {
+                fw.TataNexonEV();
+                cout << endl;
+                fw.MahindraeVerito();
+                cout << endl;
+            }
+            else if(budget==2)
+            {
+                fw.HyundaiKonaElectric();
+                cout << endl;
+                fw.MahindraXUV400();
+                cout << endl;
+            }
+    }
+}
+void tier3(user p)
+{
+    switch(p.vehicleType)
+    {
+        case 1:
+            twoWheel tw;
+            tw.iVOOMiJeetX();
+            cout << endl;
+            tw.HeroElectricOptima();
+            cout << endl;
+            tw.OkinawaPraisePro();
+            cout << endl;
+            tw.OkinawaiPraisePlus();
+            cout << endl;
+            break;
+        case 2:
+            cout << "Unfortunately, " << p.city << " does not have enough Charging Stations" << endl;
+            cout << "We suugest, you apply for a charging station through our website. \nThis will directly let the government know about the lack of charging stations in your locality. \nWith enough requests from your city, a charging station will be built and you can buy a Electric Car with no worry." << endl;
+            break;
+    }
+}
